@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>
+      Kinh nghiệm thu được sau khi giải xong 100 bài LeetCode đầu tiên
+    </title>
+    <link
+      rel="shortcut icon"
+      href="https://techmaster.vn/resources/image/favicon.ico"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+            <a href="https://techmaster.vn/" title="Techmaster">
+                <img src="https://techmaster.vn/resources/image/logo-techmaster/white/white_200x74.png" alt="Techmaster">
+            </a>
+        </div>
+        <ul class="menu">
+            <li><a href="https://techmaster.vn/">KHÓA HỌC</a></li>
+            <li><a href="https://techmaster.vn/san-pham-hoc-vien">SẢN PHẨM HỌC VIÊN</a></li>
+            <li><a href="https://techmaster.vn/trungtam/lich-khai-giang">KHAI GIẢNG</a></li>
+            <li><a href="https://techmaster.vn/posts">BLOG</a></li>
+            <li><a href="https://techmaster.vn/posts">TRẢI NGHIỆM</a></li>
+            <li><a href="https://techmaster.vn/trungtam/trung-tam">CHÚNG TÔI</a></li>
+        </ul>
+    </header>
+    <section>
+        <article>
+          <h1>Kinh nghiệm thu được sau khi giải xong 100 bài LeetCode đầu tiên</h1>
+          <p>23 tháng 11, 2022 - 1468 lượt xem</p>
+          <a
+            style="text-decoration: none"
+            href="https://techmaster.vn/posts?keyword=&category=bpnjj7v0k7qvdrn8hg40"
+          >
+            <span class="tags">Data structure & Algorithm</span>
+          </a>
+          <a
+            style="text-decoration: none"
+            href="https://techmaster.vn/posts?keyword=&category=444"
+          >
+            <span class="tags">Lập trình</span>
+          </a>
+          <blockquote>
+            Sau khi phát động phong trào rèn luyện kỹ năng lập trình trên nền tảng
+            LeetCode, tôi tự bắt tay vào luyện để thử thách bản thân. Sau đúng 1
+            tháng, tôi đã hoàn thành hơn 100 bài LeetCode. Bài viết này chia sẻ
+            những kinh nghiệm và trải nghiệm bản thân khi luyện LeetCode.
+          </blockquote>
+          <h2>Có quá nhiều người giỏi hơn mình, nhưng cứ bình tĩnh mà luyện</h2>
+          <p>
+            Khi tôi tạo tài khoản trên LeetCode, ranking thứ hạng của tôi là 1,6
+            triệu gì đó. Có nghĩa đã có 1,6 triệu lập trình viên đã từng luyện
+            LeetCode và tôi đứng dưới họ. Sau mỗi bài giải thành công, thứ hạng của
+            tôi lại tăng vài bậc. Sau khi giải được 102 bài, tôi đạt thứ hạng
+            552,879 như vậy đã bỏ qua được hơn 1 triệu thành viên sau một tháng.
+            Thỉnh thoảng thấy thứ hạng tăng cũng khá vui, được khích lệ cho những cố
+            gắng suốt 1 tháng qua.
+          </p>
+          <p>
+            Tuy nhiên khi làm những bài chủ đề Binary Tree, phần đệ quy Pre Order,
+            In Order, Post Order traversal, tôi khá lúng túng. Tôi đã phải xem lời
+            giải của
+            <a
+              href="https://leetcode.com/problems/evaluate-boolean-binary-tree/"
+              style="text-decoration: none"
+              >bài 2331. Evaluate Boolean Binary Tree</a
+            >
+            vì cách làm của tôi quá rối rắm, đúng với vài test case, nhưng khi
+            submit lại failed. Khi xem code giải trong mục Discussion, tôi ngạc
+            nhiên bởi lời giản ngắn gọn, đơn giản đến không ngờ. Phải công nhận
+            LeetCode có rất nhiều cao thủ. Nếu không thể tự mình giải quyết những
+            bài tập khó, hãy đọc, nghiền nghẫm thật kỹ bài giải của người khác. Chạy
+            debug từng dòng một để hiểu vấn đề.
+          </p>
+          <pre>
+              class Solution {
+                //Bài này phải xem Discussion
+                public boolean evaluateTree(TreeNode root) {
+                    if (root.val == 0) return false;
+                    if (root.val == 1) return true;
+                    boolean l = evaluateTree(root.left);
+                    boolean r = evaluateTree(root.right);
+                    return root.val==2 ? l|r : l&amp;r;
+                }
+            }
+          </pre>
+          <h2>Luôn giữ mạch làm đều đặn</h2>
+          <p>
+            Kinh nghiệm của tôi khi luyện tập các môn thể thao đó là sự thường
+            xuyên, đều đặn. Sáng sớm nào tôi cũng ra hồ bơi ngoài trời, bất chấp
+            trời mưa hay mùa đông giá rét. Khi đã hình thành thói quen lặp đi lặp
+            lại, bạn sẽ không ngại ngần nữa. Có những hôm uống bia về, đầu óc không
+            tỉnh táo, khả năng tư duy kém đi nhiều, tôi sẽ chuyển qua giải những bài
+            dạng Database chủ yếu viết câu lệnh SQL đơn giản hơn để đảm bảo ngày hôm
+            đó vẫn làm được tối thiểu 2 bài.
+          </p>
+          <p>
+            World Cup 2022 tại Quatar đã bắt đầu. Tôi không xem trực tiếp bất kỳ
+            trận để có thời gian và sự tập trung vào buổi tối để luyện LeetCode.
+          </p>
+          <p>
+            Ở tuổi 47, tôi không có nhu cầu phải luyện thuật toán để đi xin việc.
+            Tuy nhiên mỗi buổi tối dành ra 1-2 tiếng để luyện LeetCode giúp đầu óc
+            tôi luôn phải lao động. Những hôm nào, giải được 2-3 bài y rằng ngủ sẽ
+            rất ngon, sáng hôm sau đi làm thấy hiệu quả.
+          </p>
+          <p>
+            <img
+              src="https://media.techmaster.vn/api/static/36/2r5oNiU7"
+              alt="profile"
+              style="max-width: 100%"
+            />
+          </p>
+          <h2>Chịu khó Google tìm kiếm hướng giải</h2>
+          <p>
+            Ví du bài<a
+              href="https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/"
+              style="text-decoration: none"
+            >
+              1022. Sum of Root To Leaf Binary Numbers</a
+            >
+            yêu cầu cộng tất cả những số nhị phân được hình thành trong quá trình
+            duyệt từ Root đến Leaf. Vậy bài này quy về duyệt tất cả các đường có thể
+            từ Root đến Leaf. Tôi sẽ google “Binary Tree traverse root to leaf”. Kết
+            quả ra được bài
+            <a
+              href="https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/"
+              style="text-decoration: none"
+              >Given a binary tree, print all root-to-leaf paths.</a
+            >
+          </p>
+          <p>
+            Chịu khó đọc code mẫu, chạy thử rồi áp dụng vào để giải bài LeetCode số
+            1022.
+          </p>
+          <h2>Hướng đến 200 rồi 300 bài LeetCode</h2>
+          <p>
+            Kế hoạch trong 2 tháng tới của tôi sẽ hoàn thành thêm 100 bài LeetCode
+            tập trung vào các chủ đề BinaryTree, Recursion, Matrix, Depth First
+            Search, Bread First Search, và khoảng 20 bài Database SQL. Tôi cũng
+            không vội giải những bài Medium mà muốn giải hết tất cả những bài Easy.
+            Có 2 hướng:
+          </p>
+          <ul>
+            <li>
+              Giải quyết những bài dễ, vì những bài này phổ biến thường gặp 80%
+              trong công việc lập trình hàng ngày. Tôi chọn hướng này.
+            </li>
+            <li>
+              Giải quyết những bài khó, chỉ gặp trong 20% công việc thường ngày.
+              Loại bài này dùng để đi thi nhiều hơn.
+            </li>
+          </ul>
+          <p>
+            Từ bài thứ 200-300 tôi sẽ chọn những chủ đề khác. Lúc này tôi sẽ đăng ký
+            gọi Premium để có thể xem được những bài giảng chuyên sâu cho từng chủ
+            đề.
+          </p>
+          <p>
+            Mất thêm 2 tháng nữa để hoàn thành tới bài thứ 300. Dự kiến tháng
+            3/2023, tôi sẽ xong.
+          </p>
+          <hr />
+          <a href="ex1.html" style="text-decoration: none" title="Dùng LeetCode để luyện kỹ năng lập trình"><span>BÀI TRƯỚC</span></a>
+          <a href="ex3.html" style="text-decoration: none" title="Khái niệm đệ quy trong lập trình"><span>BÀI TIẾP</span></a>
+          <hr />
+        </article>
+        <aside></aside>
+    </section>
+    <footer>
+      <img
+        src="https://media.techmaster.vn/api/static/crop/bqu25ik51co0sqthsj0g"
+        alt="trinh-minh-cuong"
+      />
+      <p><b>Trịnh Minh Cường</b></p>
+      <p><i>349 bài viết</i></p>
+    </footer>
+  </body>
+</html>
