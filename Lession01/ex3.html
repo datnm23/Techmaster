@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khái niệm đệ quy trong lập trình</title>
+    <link rel="shortcut_icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/120px-User_icon_2.svg.png"
+        type="image/z-icon" />
+</head>
+
+<body>
+    <h1>Khái niệm đệ quy trong lập trình</h1>
+    <p>09 tháng 11, 2018 - 69919 lượt xem</p>
+    <a style="text-decoration: none" href="https://techmaster.vn/posts?keyword=&category=812">
+        <span>Algorithm</span>
+    </a>
+    <p>
+        Nơi căn tủ nhỏ ở phòng khách nhà tôi, có bày một con búp bê Matryoshka nhỏ
+        nhắn với những nét vẽ mềm mại, đáng yêu. Khi còn nhỏ tôi thường đem ra
+        khoe với chúng bạn và đố xem sâu trong thân búp bê mẹ, sẽ là bao nhiêu búp
+        bê con khác. Con búp bê Matryoshka vẫn còn đó, nom trông cũ đi nhiều,
+        nhưng sự thích thú của tôi lại không hề giảm. Giờ, thay vì đem ra nghịch
+        chơi, tôi lại lấy nó làm ví dụ cho một khái niệm rất căn bản trong bất kỳ
+        ngôn ngữ lập trình nào - khái niệm “đệ quy”.
+    </p>
+    <img src="https://media.techmaster.vn/api/fileman/Uploads/users/7946/icon/Russian-Matroshka_no_bg.jpg"
+        alt="Matryoshka" style="max-width: 100%" />
+    <p>
+        Nếu thấy khó hiểu với khái niệm đệ quy, hãy liên tưởng đến búp bê
+        Matryoshka
+    </p>
+    <p>
+        Trong bài dịch này ta hãy cùng tìm hiểu về các đặc điểm của đệ quy và học
+        cách sử dụng đệ quy để giải quyết vấn đề với ngôn ngữ lập trình Java.
+    </p>
+    <h2>1. Hiểu đơn giản đệ quy là gì?</h2>
+    <p>
+        Trước tiên ta cần hiểu phương thức trước, trong lập trình, phương thức là
+        tập hợp các lệnh với tham số truyền vào để máy tính thao tác lệnh theo ý
+        muốn của người viết, đệ quy xảy ra khi người viết các phương thức tự gọi
+        (hoạc định nghĩa lại) chính nó.
+    </p>
+    <p>Xem ví dụ đơn giản sau nhé. Đề bài: Tính lũy tiến từ 0 đến n.</p>
+    <pre>
+        public int sum(int n) {
+            if (n >= 1) {
+                  return sum(n - 1) + n;
+            }
+            return n;
+            }
+    </pre>
+    <p>Giải thích:</p>
+    <ul>
+        <li>
+            Bạn truyền một tham số n vào phương thức sum(), lệnh trong phương thức
+            sum sẽ trả về tham số n bạn truyền vào khi chạy hết chương trình “return
+            n”.
+        </li>
+        <li>
+            Để đến được bước đó, chương trình sẽ chạy qua các lệnh điều kiện
+            “if(n>=1)” để định nghĩa lại phương thức sum một lần nữa “sum(n-1) + n”,
+            phương thức mới sẽ khiến giá trị n sẽ thay đổi theo từng vòng của điều
+            kiện cho đến khi không còn thỏa mãn điều kiện được cho.
+        </li>
+        <li>
+            Khi chương trình “return n” thì n chính là giá trị đã được tính ở phương
+            thức ta đặt điều kiện bên trên.
+        </li>
+    </ul>
+    <p>Như vậy, hai yếu tố cần để tiến hành một phương thức đệ quy là:</p>
+    <ul>
+        <li>
+            <b>Có điều kiện dừng:</b> Xác định quy luật của phương thức và tìm giá
+            trị cụ thể khi thỏa mãn một điều kiện nhất định, ở bước này vẫn chưa có
+            phương thức đệ quy nào được gọi.
+        </li>
+        <li>
+            <b>Phương thức đệ quy</b>: Phương thức đệ quy sẽ gọi lại chính nó cho
+            đến khi nó trả về điều kiện dừng ở bước 1.
+        </li>
+    </ul>
+    <p>
+        Tưởng tượng, mỗi lần bạn sử dụng đệ quy, chương trình chạy một vòng và bộ
+        nhớ Stack sẽ được chồng thêm một lớp dữ liệu, tình trạng lãng phí bộ nhớ
+        rất dễ xảy ra nếu bạn không phân tích kỹ các vòng chạy đệ quy để có tính
+        toán hợp lý. Vấn đề trên có thể giải quyết bằng cách “tối ưu hóa đòn bẩy
+        đệ quy đuôi”.
+    </p>
+    <img src="https://media.techmaster.vn/api/fileman/Uploads/users/7946/icon/1_appBwh6_RtvocVxwqpplHA.jpeg"
+        alt="recursion" style="max-width: 100%" />
+    <p>Viết code bất cẩn, sẽ có n số khung đệ quy ghi đè lên bộ nhớ Stack</p>
+    <h2>2. Đệ quy đuôi và đệ quy đầu</h2>
+    <p>
+        Vậy câu hỏi đặt ra là đệ quy đuôi khác với đệ quy đầu ở đâu. Chúng ta gọi
+        là đệ quy đuôi khi phương thức đệ quy được đặt ở cuối, sau khi chương
+        trình chạy qua điều kiện dừng. Còn lại thì ta gọi đó là đệ quy đầu. Ví dụ,
+        phương thức ở phần 2 là đệ quy đầu, giờ hãy cùng tiếp tục biến đổi một
+        chút và ta có phương thức đệ quy đuôi tính lũy tiến từ currentSum đến n:
+    </p>
+    <pre>
+        public int tailSum(int currentSum, int n) {
+   		    if (n &lt;= 1) {
+        	return currentSum + n;
+    	    }
+    		return tailSum(currentSum + n, n - 1);
+        }
+    </pre>
+    <p>
+        Như vậy với phương thức đệ quy đuôi, phương thức đệ quy sẽ được chương
+        trình ưu tiên xử lý dứt điểm. Chương trình sẽ không phải chạy nhiều vòng
+        xử lý điều kiện như phương thức đệ quy đầu, nên theo logic, nguy cơ tràn
+        bộ nhớ Stack sẽ được giảm thiểu.
+    </p>
+    <h2>3. So sánh giữa đệ quy và vòng lặp</h2>
+    <p>
+        Ưu điểm lớn nhất của phép đệ quy là tiếp cận xử lý vấn đề bằng những đoạn
+        code sạch, gọn gàng, dễ đọc, dễ hiểu. Nhược điểm rõ ràng là nguy cơ cao
+        tràn bộ nhớ Stack như đã giải thích ở trên.
+    </p>
+    <p>
+        Cùng giải quyết một bài toán nhưng một phương án khác để thay thế đệ quy
+        là sử dụng vòng lặp.
+    </p>
+    <p>
+        Đề bài giống với bài toán tính lũy tiến n ở trên, ta có cách giải quyết
+        với vòng lặp như sau:
+    </p>
+    <pre>
+        public int iterativeSum(int n) {
+
+            int sum = 0;
+
+            if(n &lt; 0) {
+
+            return 0;
+
+            }
+
+            for(int i=0; i&lt;=n; i++) {
+
+        sum += i;
+
+            }
+
+        return sum;
+
+        }
+    </pre>
+    <p>
+        Dù vòng lặp có một ưu điểm là chỉ có một vòng duy nhất được gọi ra và ta
+        sẽ không phải lo nghĩ gì về vấn đề tràn bộ nhớ Stack. Nhưng vòng lặp cũng
+        có một nhược điểm so với đệ quy là code xử lý sẽ viết dài và phức tạp hơn.
+    </p>
+    <h2>4. Các ví dụ mở rộng của đệ quy</h2>
+    <p>Sức mạnh thật sự của đệ quy là thay vì bạn phải thiết kế các thuật toán dài dòng với vòng lặp, đệ quy cho phép ta
+        áp dụng các tư duy toán học trực tiếp vào thuật toán một cách dễ dàng.</p>
+    <p>Đề bài: Nhập giá trị n và tìm đơn vị của 10n</p>
+    <p>Để giải quyết bài toán, ta tiến hành các bước sau:</p>
+    <ul>
+        <li>Trước tiên phân tích quy luật của bài toán, để tính giá trị của 10n ta sẽ phải tính giá trị của 10n-1 * 10
+            trước.</li>
+        <li>Nhưng để được giá trị của 10n-1 thì ta sẽ phải tính đơn vị 10(n-1)-1 trước.</li>
+        <li>Cứ vậy ta xác định được số hai số cuối sẽ là 101 = 10 và 100 = 1. Đây chính là “điều kiện dừng”, khi đã xác
+            định được điều kiện dừng, thì việc còn lại chỉ là thiết kế phương trình đệ quy phù hợp.</li>
+        <li>Từ phân tích trên, ta sẽ đưa ra 2 trường hợp với n = 0 và n>0 (đây sẽ là trường hợp ta sử dụng đệ quy).</li>
+    </ul>
+    <pre>
+        public int powerOf10(int n) {
+
+            if (n == 0) {
+
+            return 1;
+
+            }
+
+            return powerOf10(n-1) * 10;
+
+        }
+    </pre>
+    <h2>5. Dãy Fibonacci và đệ quy</h2>
+    <p>Dãy Fibonacci là dãy vô hạn các số tự nhiên bắt đầu bằng hai phần tử 0 và 1, dãy được thiết lập theo quy tắc mỗi
+        phần tử luôn bằng tổng hai phần tử trước nó, ta có dãy Fibonacci sau: 0 1 1 2 3 5 8 13 21 34 55 …</p>
+    <p>Tìm số Fibonacci tương ứng với số thứ tự n, để sử dụng đệ quy tìm được số Fibonacci tương ứng, ta sẽ cần xác định
+        quy luật và điều kiện dừng trước của dãy số Fibonacci.</p>
+    <ul>
+        <li>Quy luật, ta nhận thấy số n sẽ là tổng của 2 chữ số đứng sau nó là (n-2) + (n-1).</li>
+        <li>Và ta biết chắc chắn rằng n1 = 0 và n2= 1 là điều kiện dừng của dãy số.</li>
+        <li>Như vậy, ta sẽ chia làm 2 trường hợp và thực hiện phương thức đệ quy như sau:</li>
+    </ul>
+    <pre>
+        public int fibonacci(int n) {
+
+            if (n &lt; 1) {
+
+            return n;
+
+            }
+
+            return fibonacci(n-1) + fibonacci(n-2);
+
+        }      
+    </pre>
+    <h2>6. Biểu diễn số thập phân dưới dạng nhị phân với đệ quy</h2>
+    <p>Thử đặt ra đề bài với tình huống khi ta muốn chuyển một số từ dạng thập phân n sang dạng nhị phân, tương tự như
+        các bước trên ta thực hiện:</p>
+    <ul>
+        <li>Xác định được quy luật của chuyển đổi từ số thập phân sang nhị phân là chia số n cho 2, giữ lại phần dư (0
+            hoạc là 1), tiếp tục lấy thương chia tiếp cho 2 cho đến khi trở về trường hợp 1 chia cho 2 (0 dư 1).</li>
+        <li>Xác định điều kiện dừng của quy luật là khi số n = 0, ta có 0 chia 2 vẫn là 0 và n = 1, 1 chia cho 2 bằng 0
+            dư 1.</li>
+        <li>Như vậy ta chia ra làm 2 trường hợp và thực hiện phép đệ quy như sau:</li>
+    </ul>
+    <pre>
+        public String toBinary(int n) {
+            if (n &lt; 1 ) {
+                return String.valueOf(n);
+            }
+                return toBinary(n / 2) + String.valueOf(n % 2);
+        }
+    </pre>
+    <h2>7. Kết luận</h2>
+    <p>Đệ quy là một khái niệm căn bản trong lập trình và đầy hiệu quả trong tư duy giải quyết vấn đề. Rất nhiều bài
+        toán sau khi được phân tích có thể được giải quyết bằng đệ quy và đồng thời nhiều bài toán khác nếu tiếp cận với
+        đệ quy sẽ tiết kiệm được rất nhiều đoạn code dài dòng.</p>
+    <p>Thường xuyên rèn luyện giải quyết vấn đề với đệ quy sẽ trợ giúp là rất hữu ích cho tư duy thuật toán của những
+        lập trình viên mới vào nghề, khi mà họ nên học phương pháp tiếp cận và xử lý vấn đề một cách logic và gọn gàng
+        nhất có thể.</p>
+    <p><a href="https://java.techmaster.vn/" style="text-decoration: none;">Lập trình Web Java FullStack</a> cho người
+        mới bắt đầu</p>
+    <hr />
+    <a href="ex2.html" style="text-decoration: none" title="Kinh nghiệm thu được sau khi giải xong 100 bài LeetCode đầu tiên"><span>BÀI TRƯỚC</span></a>
+    <a href="ex1.html" style="text-decoration: none" title="Dùng LeetCode để luyện kỹ năng lập trình"><span>BÀI TIẾP</span></a>
+    <hr />
+    </article>
+    <footer>
+        <img src="https://media.techmaster.vn/api/img/users/7946.png" alt="quang-nguyen" />
+        <p><b>Quang Nguyen</b></p>
+        <p><i>3 bài viết</i></p>
+    </footer>
+</body>
+</html>

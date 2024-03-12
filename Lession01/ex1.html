@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dùng LeetCode để luyện kỹ năng lập trình</title>
+    <link rel="shortcut icon" href="https://techmaster.vn/resources/image/favicon.ico" type="image/png" />
+</head>
+
+<body>
+    <article>
+        <h1>Dùng LeetCode để luyện kỹ năng lập trình</h1>
+        <p>29 tháng 10, 2022 - 5380 lượt xem</p>
+        <a style="text-decoration: none" href="https://techmaster.vn/posts?keyword=&category=812">
+            <span>Algorithm</span>
+        </a>
+        <a style="text-decoration: none" href="https://techmaster.vn/posts?keyword=&category=444">
+            <span>Lập trình</span>
+        </a>
+        <blockquote>
+            Cấu trúc dữ liệu - giải thuật (CTDL-GT) đối với sinh viên học chuyên
+            ngành CNTT là môn khó nhằn. Với những người học CNTT trái ngành, khi các
+            chương trình đào tạo đều tập trung dạy dùng framework để tạo ứng dụng,
+            việc hiểu, dùng tốt CTDL-GT là điều xa vời. Nhưng ngày càng nhiều các
+            công ty ở VN đã phỏng vấn, lọc ứng viên bằng cách kiểm tra giải bài tập
+            CTDL-GT. Bài viết này sẽ chia sẻ kinh nghiệm rèn luyện CTDL-GT trên nền
+            tảng LeetCode.
+        </blockquote>
+        <h2>Tại sao chọn LeetCode?</h2>
+        <p>
+            Giải bài tập lập trình và chấm điểm tự động bằng máy tính đã rất phổ
+            biến (auto judge online programming). Ở quốc tế, có LeetCode, Hackerank,
+            CodeForce, Spoj. Ở VN có nhiều trang thi lập trình trực tuyến ví dụ
+            <a href="http://codelearn.io/" style="text-decoration: none">CodeLearn.io</a>, và nhiều trang sử dụng mã
+            nguồn mở DMOJ: Modern Online Judge như
+            <a href="https://oj.vnoi.info/">https://oj.vnoi.info/</a>
+        </p>
+        <p>Tại sao tôi chọn LeetCode và khuyên các bạn bắt đầu với LeetCode?</p>
+        <ul>
+            <li>
+                Giao diện làm bài thi rất tốt, giúp bạn tập trung vào giải quyết vấn
+                đề chính thay vì phải đọc, xuất dữ liệu.
+            </li>
+            <li>
+                Số lượng bài tập rất lớn được phân loại theo 3 cấp độ Easy, Medium,
+                Hard và đánh dấu theo chủ đề: Array, Map, Binary Tree, Dynamic
+                Programming, Recursion, SQL…
+            </li>
+            <li>
+                Có cả nội dung ôn luyện từ rất dễ để bạn không bị bỡ ngỡ choáng ngợp
+                bởi độ khó.
+            </li>
+            <li>Số lượng thành viên rất lớn > 2.5 triệu người tham gia.</li>
+            <li>
+                Luyện theo chủ đề nhỏ, chuyên đề lớn, hoặc cho mục tiêu thi tuyển vào
+                các công ty nổi tiếng.
+            </li>
+            <li>
+                Có dịch vụ đặc quyền thu phí giúp bạn có trải nghiệm tốt hơn, không
+                chỉ thi mà còn được học luôn qua mỗi bài tập.
+            </li>
+            <li>
+                Phần trao đổi trong từng bài tập, blog chia sẻ kinh nghiệm rất bổ ích.
+            </li>
+        </ul>
+        <p>LeetCode sử dụng thuần tiếng Anh. Nó vừa là trở ngại cho nhiều người VN, nhưng khi đã làm quen thì nó giúp
+            lập trình viên VN luyện kỹ năng đọc tiếng Anh rất tốt.</p>
+        <h2>Đều đặn, chăm chỉ</h2>
+        <p>Bạn hãy luyện càng nhiều càng tốt và thực hiện hàng ngày. Giải bài tập LeetCode trong một giờ mỗi ngày sẽ tốt
+            hơn là chỉ làm trong bảy giờ vào Chủ nhật. Nếu bạn đang là sinh viên học tại Techmaster, thì mỗi ngày nên
+            dành ra tối thiểu 2 tiếng để luyện LeetCode.</p>
+        <p>Ví dụ đặt mục tiêu thế này, một năm có 365 ngày, 12 tháng hay 48 tuần. Năm ngày một tuần, mỗi ngày chúng ta
+            giải 1.5 bài LeetCode. Đây là mức độ gần như bạn sinh viên nào kể cả không học chuyên ngành CNTT cũng có thể
+            làm được. Sau 1 năm chăm chỉ bạn sẽ giải được 12 tháng * 4 tuần * 5 ngày * 1.5 bài = 360 bài.</p>
+        <p>Hãy tự thưởng cho mình sau khi giải được một bài bằng cách xem Ranking của bạn tăng đều mỗi ngày.</p>
+        <p><img src="https://media.techmaster.vn/api/static/36/FmjxwTYA" alt="user-profile" style="max-width: 100%;">
+        </p>
+        <h2>Từ dễ đến khó</h2>
+        <p>Nếu bạn đang tặc tị ở một bài khó, hãy tạm dừng chuyển sang bài khác dễ hơn, tương tự hoặc đọc thêm tài liệu
+            về nó, ví dụ các cách khác nhau để duyệt cây nhị phân chả hạn (Binary Tree Traversal).</p>
+        <p>Thay vì chọn những bài Medium, Hard ngay, tại sao không chọn làm thật nhiều những bài cấp độ Easy. Cảm giác
+            giải được bài LeetCode đều đặn mỗi ngay sẽ giúp bạn phấn chấn tự tin hơn rất nhiều.</p>
+        <p>Ví dụ tôi có kế hoạch như sau làm tất cả 200 bài cấp độ Easy trước, sau đó mới bắt đầu làm 50 bài Medium, rồi
+            mới đến các bài Har</p>
+        <p><img src="https://media.techmaster.vn/api/static/36/9JmhzQee" alt="difficulty" style="max-width: 100%;"></p>
+        <h2>Luyện theo chủ đề</h2>
+        <p>Nếu bạn đã hình dung được vị trí lập trình viên mà bạn sẽ ứng tuyển hãy tập trung luyện những bài tập
+            mà vị trí đó thường hay hỏi. Ví dụ vị trí kỹ sư phần mềm thường sẽ có rất nhiều câu hỏi về cấu trúc dữ liệu
+            và giải thuật. Bạn muốn ứng tuyển vị trí lập trình CSDL, hãy ưu tiên bộ đề SQL</p>
+        <ul>
+            <li>Đầu tiên hãy đọc và giải hết bộ các bài tập Nhập môn đã: <a
+                    href="https://leetcode.com/explore/featured/card/the-leetcode-beginners-guide/"
+                    style="text-decoration: none;">The LeetCode Beginner's Guide</a></li>
+            <li>Sau đó đọc kỹ các thao tác mảng vì mảng xuất hiện ở rất nhiều bài <a
+                    href="https://leetcode.com/explore/learn/card/fun-with-arrays/"
+                    style="text-decoration: none;">Arrays 101</a></li>
+            <li><a href="https://leetcode.com/explore/learn/" style="text-decoration: none;">https://leetcode.com/explore/learn/</a> link này có rất
+                nhiều chủ đề. Bạn nên dành thời gian đọc kỹ để hiểu bản chất.</li>
+        </ul>
+        <p><img src="https://media.techmaster.vn/api/static/36/_6eZxkzR" alt="Code-tags" style="max-width: 100%;"></p>
+        <h2>Nhiều lời giải cho 1 bài</h2>
+        <p>Trong một lớp sẽ có nhiều sinh viên cùng tham gia giải LeetCode. Một số bạn giải thật nhiều và thật nhanh để
+            tăng hạng. Ngay tại thời điểm đó, có vẻ họ vượt trội hơn so với những người còn lại. Nhưng sau khi dừng giải
+            LeetCode khoảng mấy tháng, họ sẽ quên rất nhanh. Thay vì chạy theo thành tích, hãy cố gắng giải một bài bằng
+            nhiều cách khác nhau, sử dụng các cấu trúc dữ liệu khác nhau (Array, List, HashMap), vòng lặp hoặc đệ quy,
+            rồi so sánh tốc độ. Sau đó ghi chép quan sát thực tế:</p>
+        <ul>
+            <li>Cách nào dễ lập trình, code gọn nhất?</li>
+            <li>Cách nào tốc độ tốt nhất ? Tại sao?</li>
+            <li>Phương pháp chung để tối ưu tốc độ: không gọi 1 hàm lặp lại nhiều lần mà gán vào một biến, fixed array
+                sẽ nhanh hơn ArrayList (mảng kích thước động), cần loại bớt việc duyệt những trường hợp không cần thiết
+            </li>
+        </ul>
+        <p><img src="https://media.techmaster.vn/api/static/36/OpkCEfvP" alt="answers-1365" style="max-width: 100%;">
+        </p>
+        <p>Ví dụ với bài <a href="https://leetcode.com/problems/number-of-arithmetic-triplets/"
+                style="text-decoration: none;">2367. Number of Arithmetic Triplets</a></p>
+        <p>Bạn có thể dùng hai vòng lặp lồng nhau để xử lý, độ phức tạp là O(n^2)</p>
+        <p>Cách tốt hơn, có thể dùng HashMap</p>
+        <pre>
+            public int arithmeticTriplets(int[] nums, int diff) {
+                HashMap<Integer, Integer> map = new HashMap&lt;&gt;();
+                int count_triplet = 0;
+                int two_diff = 2 * diff;
+                for (int i = nums.length-1; i >= 0; i--) {
+                    int x = nums[i];
+                    map.put(x, i);
+                    if (map.get(x + diff) != null && map.get(x + two_diff) != null) {
+                        count_triplet++;
+                    }
+                }
+                return count_triplet;
+        }
+        </pre>
+        <p>Nhưng HashMap cũng hơi thừa thãi khi chúng ta không cần {Key, Value} mà chỉ cần kiểm tra sự tồn tại một số
+            trong một tập, do đó hãy sử dụng HashSet <code>HashSet<Integer> set = new HashSet&lt;&gt;();</code></p>
+        <pre>
+            public int arithmeticTriplets(int[] nums, int diff) {
+                HashSet<Integer> set = new HashSet&lt;&gt;();
+                int count_triplet = 0;
+                int two_diff = 2 * diff;
+                for (int i = nums.length-1; i >= 0; i--) {
+                    int x = nums[i];
+                    set.add(x);
+                    if (set.contains(x + diff) && set.contains(x + two_diff)) {
+                        count_triplet++;
+                    }
+                }
+                return count_triplet;
+            }
+        </pre>
+        <p>Tối ưu thêm chút nữa, đoạn vòng lặp sử dụng biến đếm cũng hơi phức tạp</p>
+        <pre>
+            for (int i = nums.length-1; i >= 0; i--) {
+                int x = nums[i];
+                ...
+            }
+            </pre>
+        <p>Ta có thể thay thế bằng vòng lặp duyệt phần tử</p>
+        <pre>
+            for (int x:nums) {
+                set.add(x);
+                ...
+            }
+            </pre>
+        <h2>Học hỏi từ những người khác</h2>
+        <p>Tôi không giỏi thuật toán thế nên tôi luôn chọn cách làm đơn giản diễn giải mộc mạc theo cách nghĩ của tôi:
+        </p>
+        <ul>
+            <li>Bước 1: chạy một vòng lặp</li>
+            <li>Bước 2: duyệt từng phần tử kiểm tra điều kiện, nếu đúng thì làm gì, thoát khi gặp điều kiện tới hạn</li>
+            <li>Bước X: trả về kết quả</li>
+        </ul>
+        <p>Thường thì cách này chạy chậm, tôi cố gắng tuning code chút nữa.</p>
+        <p>
+            <img src="https://media.techmaster.vn/api/static/36/czv1Nzce" alt="result" style="max-width: 100%;">
+        </p>
+        <h2>Tạo một dự án chia thành các bài và test case</h2>
+        <p>Nếu bạn không mua gói Premium Subscription, bạn không thể debug trong LeetCode. Đôi khi gặp phải một bài khó,
+            bạn sẽ rất muốn chạy debug để tìm lỗi mà lại không muốn trả tiền. Vậy hãy tạo một dự án chung, mỗi bài tập
+            đóng gói vào một Class nếu bạn lập trình Java, C++, Python hoặc vào một function nếu bạn lập trình Golang.
+            Tiếp đó viết Unit Test để gọi từng hàm cụ thể kiểm thử độc lập.</p>
+        <p>Với Java tôi dùng Gradle hoặc Maven tạo một dự án console application kiểu như sau:</p>
+        <p>
+            <img src="https://media.techmaster.vn/api/static/36/qk5JHqYY" alt="example-java" style="max-width: 100%;">
+        </p>
+        <p>Đây là code để kiểm thử bài <a
+                href="https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/">1365. How
+                Many Numbers Are Smaller Than the Current Number</a>. Tôi sử dụng JUnit Jupiter và AssertJ để viết kiểm
+            thử.</p>
+        <pre>
+            package leetcode;
+            import org.junit.jupiter.api.Test;
+            import static org.assertj.core.api.Assertions.*;
+            
+            class Test1365 {
+                @Test void method1() {
+                    LeetCode1365 app = new LeetCode1365();
+                    int[] nums = new int[]{8,1,2,2,3};
+                    var out = app.smallerNumbersThanCurrent2(nums);
+                    assertThat(out).containsExactly(new int[]{4,0,1,1,3});
+            
+                    nums = new int[]{6,5,4,8};
+                    out = app.smallerNumbersThanCurrent3(nums);
+                    assertThat(out).containsExactly(new int[]{2,1,0,3});
+                }
+            }
+        </pre>
+        <p>Ưu điểm của viết code chạy thử ra ngoài giao diện LeetCode là chúng ta debug được, và dựng lại toàn bộ code
+            chạy được chứ không chỉ viết mỗi hàm để giải. Sẽ có nhiều class sau này có thể tận dụng vào dự án thật như
+            Binary Tree… Code trên IDE chuyên nghiệp cũng giúp ta không xa rời thực tế quá tập trung vào 1 hàm vì thực
+            tế là cả một dự án gồm nhiều class, test case. Ngoài ra nếu cần có thể viết lệnh chạy Benchmark tốc độ chính
+            xác hơn so với kết quả chạy trên môi trường dùng chung của LeetCode.</p>
+        <p>Ưu điểm của viết code chạy thử ra ngoài giao diện LeetCode là chúng ta debug được, và dựng lại toàn bộ code
+            chạy được chứ không chỉ viết mỗi hàm để giải. Sẽ có nhiều class sau này có thể tận dụng vào dự án thật như
+            Binary Tree… Code trên IDE chuyên nghiệp cũng giúp ta không xa rời thực tế quá tập trung vào 1 hàm vì thực
+            tế là cả một dự án gồm nhiều class, test case. Ngoài ra nếu cần có thể viết lệnh chạy Benchmark tốc độ chính
+            xác hơn so với kết quả chạy trên môi trường dùng chung của LeetCode.</p>>
+        <h2>Viết blog chia sẻ lại kinh nghiệm bạn học được từ giải LeetCode</h2>
+        <p>Bạn giải 10 bài LeetCode sau 10 tháng chưa chắc bạn đã còn nhớ phương pháp giải. Nhưng nếu bạn mất thời gian
+            ngồi tổng kết, viết lại bạn đã hình thành cách giải như thế nào, kinh nghiệm nào thu được khi giải LeetCode
+            vào blog thì chắc chắn 10 năm nữa khi xem lại blog bạn sẽ nhớ ngay trong vòng 5 phút. Chưa kể sẽ có nhiều
+            người đọc được bài viết của bạn. Bạn sẽ thuộc về nhóm người chia sẻ, chứ không chỉ đơn thuần thợ giải
+            LeetCode. Nên nhớ rằng LeetCode là nền tảng tự chấm lời giải lập trình có khoảng hơn 2.5 triệu thành viên.
+        </p>
+        <h2>Có nên trả phí để mua LeetCode Premium?</h2>
+        <p>LeetCode có dịch vụ cao cấp Premium, thuê bao hàng tháng là 35$ và cả năm là 159$. Dịch vụ cao cấp gồm thêm
+            những chức năng, quyền lợi:</p>
+        <ul>
+            <li>Hướng dẫn giải bằng Video rất chi tiết mỗi bài.</li>
+            <li>Xem được những bài mới lạ đặc quyền mới có.</li>
+            <li>Xem được bộ những bài thi mà các công ty lớn đã từng ra hoặc tương tự khi phỏng vấn.</li>
+            <li>Tốc độ thực thi code nhanh hơn và luôn được ưu tiên. Ở gói miễn phí thì cùng một đoạn code, tốc độ mỗi
+                lần chạy rất trồi sụt lung tung. Còn ở bản Premium có thể tốc độ thực thi vừa nhanh và vừa đồng nhất.
+            </li>
+            <li>Có thể debug lỗi ngay trong giao diện LeetCode.</li>
+        </ul>
+        <p>Nếu bạn mới làm dưới 200 bài Easy thì tôi nghĩ chưa cần mua vội. Khi nào bạn chuẩn bị thi giải Competitive
+            Programming, phỏng vấn ở các công ty lớn, hoặc bạn quá bí khi giải thì có thể dùng LeetCode Premium. Cố gắng
+            đừng lạm dụng xem lời giải, mà nỗ lực tự giải quyết sau đó xem phần Discussion để học cách giải khác sẽ nhớ
+            lâu hơn.</p>
+        <h2>Chuyển đổi nhanh giữa các ngôn ngữ lập trình nhờ LeetCode</h2>
+        <p>Tôi gặp nhiều lập trình viên. Họ rất đắn đo khi phải chuyển sang một ngôn ngữ lập trình mới vì sợ thời gian
+            học lâu và hiệu suất code không được nhanh. Kinh nghiệm của tôi là:</p>
+        <ul>
+            <li>Kiếm một cheat sheet online kiểu như thế này https://programming-idioms.org/cheatsheet/Java/Go</li>
+            <li>Thử giải lại những bài LeetCode từ ngôn ngữ đang quen sang một ngôn ngữ mời cần học. Thuật toán gần như
+                giữ nguyên, chỉ cần phải điều chỉnh lại một số kiểu cấu trúc dữ liệu thôi.</li>
+            <li>So sánh khác biệt ngôn ngữ ở một số tính năng cao cấp: OOP, Generic, Lambda, Asynchronous.</li>
+        </ul>
+        <p>Sau khi chuyển đổi khoảng 30-60 bài trong 1-2 tuần, bạn sẽ thành thạo ngôn ngữ mới.</p>
+        <h2>Tài liệu học bổ trợ khi luyện LeetCode</h2>
+        <p>Tôi hay dùng Google với những từ khoá kiểu như “Java HashMap”, “Java Binary Tree Traversal”, “Binary Tree
+            Full vs Complete”, “Java Dynamic Programming” để tìm kiếm thêm tài liệu.</p>
+        <p>Các trang khác rất hữu ích như:</p>
+        <ul>
+            <li><a href="https://www.geeksforgeeks.org/" style="text-decoration: none;">https://www.geeksforgeeks.org/</a></li>
+            <li><a href="https://programming-idioms.org/cheatsheets" style="text-decoration: none;">https://programming-idioms.org/cheatsheets</a></li>
+            <li><a href="https://visualgo.net/en" style="text-decoration: none;">Visual Algo</a></li>
+            <li>Khoá học <a href="https://www.udemy.com/course/datastructurescncpp" style="text-decoration: none;">Mastering Data Structures & Algorithms using C and C++</a></li>
+        </ul>
+        <h2>Khi nào thì ứng tuyển vào Samsung, Facebook, Google, Microsoft được?</h2>
+        <p>Thuật toán là phần thi quan trọng của các tập đoàn lớn. Phần thi này sẽ loại bỏ nhanh nhất và tàn bạo nhất
+            80% ứng viên không đạt yêu cầu tối thiểu. Còn lại 20% ứng viên sẽ phải kiểm tra, phỏng vấn nhiều kỹ năng
+            khác như: thiết kế hệ thống, thuyết trình, kinh nghiệm làm dự án thật, các dự án mã nguồn mà bạn làm thêm.
+        </p>
+        <p>Nếu bạn là tác giả đóng góp tích cực một framework rất phổ biến hoặc dựng luôn 1 ứng dụng chạy được rất thú
+            vị thì bạn không cần phải chung mâm với cả trăm thợ giải thuật toán trên LeetCode nữa. Ở trên tôi khen
+            LeetCode, mà giờ lại nói thợ giải LeetCode nghe có vẻ xách mé quá. Nhưng thực tế là vậy, kỹ năng giải
+            LeetCode có thể rèn luyện nhờ sự cần củ, làm đúng phương pháp trong 12-36 tháng. Nhưng để tạo một dự án mã
+            nguồn mở trên Github có hàng nghìn lượt like khó hơn nhiều !</p>
+        <p>Quay lại câu hỏi “Khi nào thì ứng tuyển vào Samsung, Facebook, Google, Microsoft ?”</p>
+        <p>Hiện tại LeetCode có khoảng 2.5 triệu thành viên, cứ mỗi bài bạn giải thành công, ranking của bạn tăng lên
+            chút xíu. Làm 40 bài Easy, ranking cỡ 1,090,000. Nếu làm 100 bài Easy, ranking khoảng 800,000. Khi nào bạn
+            lọt vào ranking 50,000 hãy thử đi phỏng vấn. Còn nếu bạn vào ranking 10,000 thì bạn không phải ngại khi nộp
+            đơn vào vị trí kỹ sư phần mềm ở bất kỳ công ty nào.</p>
+        <h2>Kết luận</h2>
+        <ul>
+            <li>Thời mà bạn chỉ dựa vào một đồ án môn học để đi xin việc đã qua rồi. Không những cần một đồ án tốt, mà
+                bạn cần nghiêm túc luyện kỹ năng lập trình và kinh nghiệm sử dụng cấu trúc dữ liệu giải thuật.</li>
+            <li>LeetCode là một nền tảng để luyện kỹ năng lập trình miễn phí rất tốt. Bạn muốn giỏi thì phải đầu tư thời
+                gian thôi.</li>
+            <li>Hãy cố gắng thử làm theo những đúc kết của tôi. Trường hợp bạn muốn được hướng dẫn, giải thích và huấn
+                luyện bài bản hơn, bạn có thể đăng ký những khoá học dài hơn 4 tháng ở Techmaster, chắc chắn sẽ có ít
+                nhất 12 buổi học cấu trúc dữ liệu giải thuật và giải bài tập trên LeetCode cho từng ngôn ngữ lập trình
+                bạn học.</li>
+        </ul>
+        <hr />
+        <a href="#" style="text-decoration: none"><span>BÀI TRƯỚC</span></a>
+        <a href="ex2.html" style="text-decoration: none" title="Kinh nghiệm thu được sau khi giải xong 100 bài LeetCode đầu tiên"><span>BÀI TIẾP</span></a>
+        <hr />
+    </article>
+    <footer>
+        <img src="https://media.techmaster.vn/api/static/crop/bqu25ik51co0sqthsj0g" alt="trinh-minh-cuong" />
+        <p><b>Trịnh Minh Cường</b></p>
+        <p><i>349 bài viết</i></p>
+    </footer>  
+</body>
+</html>
