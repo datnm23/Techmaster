@@ -99,8 +99,11 @@ img {
     font-size: 12px;
     display: inline;
 }
+.tag-name a{
+    display: inline-block;
+}
 .tags-thumbnail{
+    display: inline-block;
     height: 16px;
     width: 11px;
-
 }
