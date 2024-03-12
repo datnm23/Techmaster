@@ -1,0 +1,106 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+.main-content{
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-bottom: 100px;
+    padding-right: 40px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+}
+img {
+    max-width: 100%;    
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.framer-card{
+    width: 320px;
+    box-shadow:rgba(0, 0, 0, 0.05) 0px 0.796192px 2.38858px -0.625px, rgba(0, 0, 0, 0.05) 0px 2.41451px 7.24352px -1.25px, rgba(0, 0, 0, 0.05) 0px 6.38265px 19.148px -1.875px, rgba(0, 0, 0, 0.05) 0px 20px 60px -2.5px ;
+}
+
+.framer-thumbnail-wrapper{
+    width: 320px;
+    height: 240px;
+}
+.framer-info{
+    vertical-align: middle;
+    padding: 30px;
+}
+.framer-title{
+    font-family:"Inter", "Inter Placeholder", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.5px;
+    color:rgb(0,17,34);
+}
+.framer-content{
+    font-family:"Inter", "Inter Placeholder", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.6px;
+    letter-spacing: normal;
+    color:rgb(102,102,102);
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.framer-button{
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    overflow: visible;
+    background-color: black;
+    box-shadow:#000000 0px 0.706592px 0.706592px -0.625px;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    font-family:"Inter", "Inter Placeholder", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.8px;
+    color: #fff;
+}
+.framer-tags{
+    align-items: center;
+    padding: 15px;
+    border-color: #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow:rgba(0, 0, 0, 0.26) 0px 0.637473px 1.14745px -1.125px, rgba(0, 0, 0, 0.24) 0px 1.93094px 3.4757px -2.25px, rgba(0, 0, 0, 0.192) 0px 5.10423px 9.18761px -3.375px, rgba(0, 0, 0, 0.03) 0px 16px 28.8px -4.5px;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    float: right;
+    display: inline;
+}
+.tag-name{
+    font-family:"Inter", "Inter Placeholder", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.8px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    display: inline;
+}
+.tags-thumbnail{
+    height: 16px;
+    width: 11px;
+
+}
