@@ -20,6 +20,8 @@ img {
     flex-direction: column;
     gap: 100px;
     align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .section-info{
     padding-left: 40px;
