@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hänna</title>
+    <link
+      rel="shortcut icon"
+      href="https://framerusercontent.com/images/Py7PYa3YX5wZ7g0BPxWgyRP5e4.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container--header flex justify-content-between align-items-center">
+        <div class="logo">
+          <a href="/">
+            <img
+              src="https://framerusercontent.com/images/B7vY6Im7QUay3t3jaIv5UDuTeI.png"
+              alt="Hanna"
+            />
+          </a>
+        </div>
+        <nav class="nav flex align-items-center">
+          <a href="/work.html" class="nav-link lexend">Work</a>
+          <a href="/articles.html" class="nav-link lexend"
+            >Articles</a
+          >
+          <a
+            href="/contact.html"
+            class="nav-link nav-link--button lexend"
+            >Say Hello</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <section class="section section--hero">
+      <div class="container">
+          <div class="page-hero-content flex flex-column">
+              <h1 class="hero-title lora lora--500">Say Hello.</h1>
+              <p class="page-hero-description lexend lexend--300">Want to work together? Awesome! Send me a quick message.</p>
+          </div>
+      </div>
+    </section>
+
+    <main class="main">
+        <section class="section section--words">
+            <div class="container">
+                <div class="section-content"> 
+                    <form class="form lexend lexend--400 flex flex-column" method="POST">
+                        <div class="form-info flex justify-content-between" >
+                            <input class="form form--input" type="text" name="name" placeholder="Full Name">
+                            <input class="form form--input" type="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-message">
+                            <textarea class="form form--input" name="message" placeholder="Please enter your message" rows="7"></textarea>
+                        </div>
+                        <div>
+                            <input class="form form--submit lexend lexend--600" type="submit" value="Get in Touch" data-metatip=""true">
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container container--footer flex justify-content-between align-items-center">
+        <p class="footer-description lexend lexend--400">
+          ©2023 Hanna. All rights reserved. A Template by <a href="https://heyframer.com/" class="template-link">Hey Framer</a>.
+        </p>
+        <nav class="nav flex">
+          <a href="/" class="nav-link lexend lexend--400">Home</a>
+          <a href="/work.html" class="nav-link lexend lexend--400 ">Work</a>
+          <a href="/articles.html" class="nav-link lexend lexend--400 ">Articles</a>
+          <a href="/contact.html" class="nav-link lexend lexend--400 ">Say Hello</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
