@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Possion</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header flex justify-content-between align-items-center">
+      <div class="header-logo flex align-items-center">
+        <img src="https://vuighe2.com/assets/img/logo_v8.png" alt="logo" />
+      </div>
+      <nav class="nav flex">
+        <div class="nav-item">
+          <a href="https://vuighe2.com/anime" class="nav-link">Anime</a>
+        </div>
+        <div class="nav-item">
+          <a href="https://vuighe2.com/movie" class="nav-link">Movie</a>
+        </div>
+        <div class="nav-item">
+          <a href="https://englishehe.com/" class="nav-link">English 1-1</a>
+        </div>
+        <div class="nav-item">
+          <a href="https://vuighe2.com/bang-xep-hang" class="nav-link">BXH</a>
+        </div>
+        <div class="header-seach">
+          <div class="seach-box">
+            <input type="text" name="seach" />
+            <div class="seach-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 absolute top-[2px] right-[2px] text-gray-200 group-hover/search:text-red-300 dark:text-slate-700 dark:group-hover/search:text-teal-500"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header-info flex justify-content-end">
+        <div class="header-info-button">
+          <div class="header-info-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-full h-full fill-slate-800 dark:fill-none dark:stroke-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="header-info-button">
+          <div class="header-info-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="header-info-button">
+          <div class="header-info-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584`-7.499-1.632z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main flex flex-direction-column">
+      <section class="section-cover">
+        <img
+          src="https://s199.imacdn.com/vg/2023/10/15/e32641f33487f998_2b1d3f948372a608_38325216973670791118684.jpg"
+          alt="spy-family"
+        />
+      </section>
+
+      <section class="section section--news">
+        <a
+          class="section-link nunito nunito--400"
+          href="https://vuighe2.com/tap-moi-nhat"
+        >
+          <h1 class="section-title nunito nunito--400">Tập Mới Nhất</h1>
+        </a>
+
+        <div class="list-card flex flex-column flex-wrap">
+          <div class="card h-180 w-320">
+            <div class="card-thumbnail">
+              <img
+                src="https://s199.imacdn.com/vg/2024/03/18/38d145c1f9b910de_746b09d3d3f96694_1636917107404995459252.jpg"
+                alt="Prince of Tennis"
+              />
+            </div>
+            <div class="card-info flex justify-content-end">
+              <h3 class="card-title clamp-text">Prince of Tennis</h3>
+              <div class="card-decription">
+                <div class="card-espisode clamp-text">Tập 166</div>
+                <div class="card-views">25 lượt xem</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-180 w-320">
+            <div class="card-thumbnail">
+              <img
+                src="https://s199.imacdn.com/vg/2023/10/16/7b427734d5c18f14_e0c76b7f1c1d8c6c_59918169742719773.jpg"
+                alt="Captain Tsubasa (2018)"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Captain Tsubasa (2018)</h3>
+              <div class="card-decription flex-justify-between">
+                <div class="card-espisode clamp-text">
+                  Tập 76 - Diễn Biến Hiệp Phụ Dưới Mưa
+                </div>
+                <div class="card-views">598 lượt xem</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-180 w-320">
+            <div class="card-thumbnail">
+              <img
+                src="https://s199.imacdn.com/vg/2024/03/17/2e1fb4fbcc163252_f88a33a1adfb5d03_14938217106872323118684.jpg"
+                alt="Shin no Nakama"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">
+                Shin no Nakama ja Nai to Yuusha no Party wo Oidasareta node,
+                Henkyou de Slow Life suru Koto ni Shimashita
+              </h3>
+              <div class="card-decription">
+                <div class="card-espisode clamp-text">
+                  Tập 24 - Thử thách của Dũng sĩ
+                </div>
+                <div class="card-views">2,071 lượt xem</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-180 w-320">
+            <div class="card-thumbnail">
+              <img
+                src="https://s199.imacdn.com/vg/2024/03/17/bd9f88a3227796cf_8e0d54f978843af8_17943317106861163118684.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">
+                Loop 7-kaime no Akuyaku Reijou wa, Moto Tekikoku de Jiyuu Kimama
+                na Hanayome Seikatsu wo Mankitsu suru
+              </h3>
+              <div class="card-decription">
+                <div class="card-espisode clamp-text">
+                  Tập 11 - Quyết tâm của hoa tuyết
+                </div>
+                <div class="card-views">1,662 lượt xem</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-180 w-320">
+            <div class="card-thumbnail">
+              <img
+                src="https://s199.imacdn.com/vg/2024/03/17/ca58fc23e563abd5_6f53c8fd42e45eaf_29296171067695663.jpg"
+                alt="Shangri-La Frontier"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">
+                Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su
+              </h3>
+              <div class="card-decription">
+                <div class="card-espisode clamp-text">
+                  Tập 23 - Thỏ và Chim vs. dàn hợp xướng xương sọ
+                </div>
+                <div class="card-views">5,874 lượt xem</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-180 w-320">
+            <div class="card-thumbnail">
+              <img
+                src="https://s199.imacdn.com/vg/2024/03/17/3406724a5b7e0d77_a9b30725fbea3af8_14039217106085154118684.jpg"
+                alt="Mashle"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Mashle</h3>
+              <div class="card-decription">
+                <div class="card-espisode clamp-text">
+                  Tập 22 - Wahlberg Baigan và mối nguy hiểm to lớn nhất
+                </div>
+                <div class="card-views">24,930 lượt xem</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-180 w-320">
+            <div class="card-thumbnail">
+              <img
+                src="https://s199.imacdn.com/vg/2024/03/17/4554922dc90151f5_b5e6c465db1137f9_12721917106114169118684.jpg"
+                alt="Saikyou Tank"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">
+                Saikyou Tank no Meikyuu Kouryaku: Tairyoku 9999 no Rare
+                Skill-mochi Tank, Yuusha Party wo Tsuihou sareru
+              </h3>
+              <div class="card-decription">
+                <div class="card-espisode clamp-text">
+                  Tập 11 - Quái vật tập kích
+                </div>
+                <div class="card-views">4,338 lượt xem</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-180 w-320">
+            <div class="card-thumbnail">
+              <img
+                src="https://s199.imacdn.com/vg/2024/03/17/4b8f1e7aea81da93_18512db2a821ddcd_12699317106105359118684.jpg"
+                alt="Kusuriya no Hitorigoto"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Kusuriya no Hitorigoto</h3>
+              <div class="card-decription">
+                <div class="card-espisode clamp-text">
+                  Tập 23 - Phượng Tiên Hoa và cây chua me đất
+                </div>
+                <div class="card-views">8,531 lượt xem</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-180 w-320">
+            <div class="card-thumbnail">
+              <img
+                src="https://s199.imacdn.com/vg/2024/03/16/320e06e7edcd4656_e2204db87cb2edab_13613217106061708118684.jpg"
+                alt="Ragna Crimson"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Ragna Crimson</h3>
+              <div class="card-decription">
+                <div class="card-espisode clamp-text">Tập 22 - Dực Vương</div>
+                <div class="card-views">7,957 lượt xem</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-180 w-320">
+            <div class="card-thumbnail">
+              <img
+                src="https://s199.imacdn.com/vg/2024/03/16/9a725f1403cc4526_b1ffe81fc1d69fe6_9712117106069253118684.jpg"
+                alt="Ore dake Level Up na Ken"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Ore dake Level Up na Ken</h3>
+              <div class="card-decription">
+                <div class="card-espisode clamp-text">
+                  Tập 10 - What Is This, a Picnic?
+                </div>
+                <div class="card-views">25,642 lượt xem</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-180 w-320">
+            <div class="card-thumbnail">
+              <img
+                src="https://s199.imacdn.com/vg/2024/03/16/d9d7f01093fcb664_5da7581bed0b1d97_14551717106002672118684.jpg"
+                alt="Kekkon Yubiwa Monogatari"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Kekkon Yubiwa Monogatari</h3>
+              <div class="card-decription">
+                <div class="card-espisode clamp-text">Tập 11</div>
+                <div class="card-views">1,656 lượt xem</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card h-180 w-320">
+            <div class="card-thumbnail">
+              <img
+                src="https://s199.imacdn.com/vg/2024/03/16/2825e85b11c60c80_48e33ed32301619e_32831171060044583.jpg"
+                alt="Kekkon Yubiwa Monogatari"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Yubisaki to Renren</h3>
+              <div class="card-decription">
+                <div class="card-espisode clamp-text">Tập 11 - Lời hứa</div>
+                <div class="card-views">1,389 lượt xem</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--album">
+        <a
+          class="section-link nunito nunito--400"
+          href="https://vuighe2.com/tap-moi-nhat"
+        >
+          <h1 class="section-title nunito nunito--400">Bộ Sưu Tập</h1>
+        </a>
+
+        <div class="list-album grid">
+          <div class="card-album card-album--nearest">
+            <div class="card-cover">
+              <img
+                src="https://s199.imacdn.com/vg/2023/12/18/34300209fba3863f_d95555fb4f601c15_13396917028928171185710.jpg"
+                alt="anime-winter-2024"
+              />
+            </div>
+          </div>
+          <div class="card-album-">
+            <div class="card-cover">
+              <img
+                src="https://s199.imacdn.com/vg/2023/09/21/d256e672999f49d3_e204e82b0f3b26f8_2820816953084767118684.jpg"
+                alt="anime-autumn-2023"
+              />
+            </div>
+          </div>
+          <div class="card-album">
+            <div class="card-cover">
+              <img
+                src="https://s199.imacdn.com/vg/2023/06/08/9c495aa611ceaf69_27a9622389671c57_10813016862126526185710.jpg"
+                alt="anime-summer-2023"
+              />
+            </div>
+          </div>
+          <div class="card-album">
+            <div class="card-cover">
+              <img
+                src="https://s199.imacdn.com/vg/2023/03/02/d66102b20c0df87d_9d5a343f6acdf971_10896816777495647185710.jpg"
+                alt="anime-spring-2023"
+              />
+            </div>
+          </div>
+            <div class="card-album">
+              <div class="card-cover">
+                <img
+                  src="https://s199.imacdn.com/vg/2023/01/30/68fa82b22b9d4965_d66e4431ce224ac7_2698216750634546118684.jpg"
+                  alt="anime-winter-2022"
+                />
+              </div>
+            </div>
+            <div class="card-album">
+              <div class="card-cover">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/09/02/a17fad944d3cecc5_5ab5fdd64a7f94fd_30967166205716499674.jpg"
+                  alt="anime-autumn-2022"
+                />
+              </div>
+            </div>
+            <div class="card-album">
+              <div class="card-cover">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/06/10/09dd799dff4a355b_a6b32d115628ac50_40892165484315239674.jpg"
+                  alt="anime-summer-2022"
+                />
+              </div>
+            </div>
+            <div class="card-album">
+              <div class="card-cover">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/03/05/803583cba5d569c2_3c4ab828e8e763bd_117964164647297779674.jpg"
+                  alt="anime-spring-2022"
+                />
+              </div>
+            </div>
+            <div class="card-album">
+              <div class="card-cover">
+                <img
+                  src="https://s199.imacdn.com/vg/2021/12/27/447d92824ddb9779_f3207425776138e9_98651164059040319674.jpg"
+                  alt="anime-winter-2022"
+                />
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="section section--rank">
+        <a
+          class="section-link nunito nunito--400"
+          href="https://vuighe2.com/bang-xep-hang"
+        >
+          <h1 class="section-title nunito nunito--400">Bảng Xếp Hạng</h1>
+        </a>
+
+        <div class="list-album grid">
+          <div class="card-album card-album--nearest">
+            <div class="card-cover">
+              <img
+                src="https://s199.imacdn.com/vg/2024/01/09/bcc852596e96a0ee_25fde2fa8f23f4f6_16727117047357026118684.jpg"
+                alt="Tsuki ga Michibiku Isekai Douchuu"
+              />
+            </div>
+            <h2 class="card-rank card-rank--top text-transparent bg-gradient-to-b from-amber-500 to-red-500 ">1</h2>
+            <h3 class="card-title card-title--rank clamp-text">Tsuki ga Michibiku Isekai Douchuu</h3>
+          </div>
+          <div class="card-album">
+            <div class="card-cover">
+              <img
+                src="https://s199.imacdn.com/vg/2024/01/07/92e7ad3753eef059_7b33d3b60da9fac4_19819217046116837118684.jpg"
+                alt="Mashle"
+              />
+            </div>
+            <h2 class="card-rank font-size-35 text-transparent bg-gradient-to-b from-amber-500 to-red-500 ">2</h2>
+            <h3 class="card-title card-title--rank clamp-text">Mashle</h3>
+          </div>
+          <div class="card-album">
+            <div class="card-cover">
+              <img
+                src="https://s199.imacdn.com/vg/2023/12/17/4b36d267261b59fb_6942bb5ec819a673_17168917027915586118684.jpg"
+                alt="Solo-leveling"
+              />
+            </div>
+            <h2 class="card-rank text-transparent bg-gradient-to-b from-amber-500 to-red-500 ">3</h2>
+            <h3 class="card-title card-title--rank clamp-text">Ore dake Level Up na Ken</h3>
+          </div>
+          <div class="card-album">
+            <div class="card-cover">
+              <img
+                src="https://s199.imacdn.com/vg/2023/10/04/07d56711bbc365e3_05b0c2fd1263e52d_16000916963634774185710.jpg"
+                alt="Shangri-La Frontier"
+              />
+            </div>
+            <h2 class="card-rank text-transparent bg-gradient-to-b from-amber-500 to-red-500 ">4</h2>
+            <h3 class="card-title card-title--rank clamp-text">Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su</h3>
+          </div>
+            <div class="card-album">
+              <div class="card-cover">
+                <img
+                  src="https://s199.imacdn.com/vg/2023/10/15/2abe5148a1b3d978_f17a350d1b24e282_12632016973554644185710.jpg"
+                  alt="Gekai Elise"
+                />
+              </div>
+              <h2 class="card-rank text-transparent bg-gradient-to-b from-amber-500 to-red-500 ">5</h2>
+              <h3 class="card-title card-title--rank clamp-text">Gekai Elise</h3>  
+            </div>
+            <div class="card-album">
+              <div class="card-cover">
+                <img
+                  src="https://s199.imacdn.com/vg/2022/09/02/a17fad944d3cecc5_5ab5fdd64a7f94fd_30967166205716499674.jpg"
+                  alt="Kusuriya no Hitorigoto"
+                />
+              </div>
+              <h2 class="card-rank text-transparent bg-gradient-to-b from-amber-500 to-red-500">6</h2>
+              <h3 class="card-title card-title--rank clamp-text">Kusuriya no Hitorigoto</h3>  
+            </div>
+            <div class="card-album">
+              <div class="card-cover">
+                <img
+                  src="https://s199.imacdn.com/vg/2024/01/08/b0a91bd681f83b30_1f206ee6ab2f21ca_17449217047256656118684.jpg"
+                  alt="Oroka na Tenshi wa Akuma to Odoru"
+                />
+              </div>
+              <h2 class="card-rank text-transparent bg-gradient-to-b from-amber-500 to-red-500 ">7</h2>
+              <h3 class="card-title card-title--rank clamp-text">Oroka na Tenshi wa Akuma to Odoru</h3>  
+            </div>
+            <div class="card-album">
+              <div class="card-cover">
+                <img
+                  src="https://s199.imacdn.com/vg/2023/10/07/c6550a11ac7a8255_83e1fe9e0a3ee665_10813116966526932185710.jpg"
+                  alt="Atarashii Joushi wa Do Tennen"
+                />
+              </div>
+              <h2 class="card-rank text-transparent bg-gradient-to-b from-amber-500 to-red-500 ">8</h2>
+              <h3 class="card-title card-title--rank clamp-text">Atarashii Joushi wa Do Tennen</h3>  
+            </div>
+            <div class="card-album">
+              <div class="card-cover">
+                <img
+                  src="https://s199.imacdn.com/vg/2023/12/26/99eb9f28b9301539_17190f4d0f62aab1_17371317035776233185710.jpg"
+                  alt="Saikyou Tank no Meikyuu Kouryaku"
+                />
+              </div>
+              <h2 class="card-rank text-transparent bg-gradient-to-b from-amber-500 to-red-500 ">9</h2>
+              <h3 class="card-title card-title--rank clamp-text">Saikyou Tank no Meikyuu Kouryaku</h3>  
+            </div>
+        </div>
+      </section>
+
+      <section class="section section--movie">
+        <a
+          class="section-link nunito nunito--400"
+          href="https://vuighe2.com/tap-moi-nhat"
+        >
+          <h1 class="section-title nunito nunito--400">Anime Movie</h1>
+        </a>
+
+        <div class="list-movie grid gap-12">
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2022/12/24/1f06c2a46ca360c8_9819bc80aba70fab_3191916718969702118684.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">The First Slam Dunk</h3>
+              <div class="card-decription flex flex-end align-items-center">
+                <div class="card-views">67,573 lượt xem</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2024/01/21/655ca67dd69574df_93008592db953c26_14016417058556998118684.jpg"
+                alt="Monsters: Ippyaku Sanjou Hiryuu Jigok"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Monsters: Ippyaku Sanjou Hiryuu Jigoku</h3>
+              <div class="card-decription flex flex-end align-items-center">
+                <div class="card-views">30,596 lượt xem</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+              src="https://s199.imacdn.com/vg/2024/01/15/cc8e0994800621cf_6b61adb58e560e19_32664170530739323.jpg"
+              alt="Maboroshi"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Maboroshi</h3>
+              <div class="card-decription flex flex-end align-items-center">
+                <div class="card-views">23,378 lượt xem</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2024/01/15/cc8e0994800621cf_6b61adb58e560e19_32664170530739323.jpg"
+                alt="Kimitachi wa Dou Ikiru ka"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Kimitachi wa Dou Ikiru ka</h3>
+              <div class="card-decription flex flex-end align-items-center">
+                <div class="card-views">19,179 lượt xem</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2023/10/11/895bb6fd0f9965e6_c8bb5953e200a7c5_22987169698154543.jpg"
+                alt="Shika no Ou: Yuna to Yakusoku no Tabi"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Shika no Ou: Yuna to Yakusoku no Tabi</h3>
+              <div class="card-decription flex flex-end align-items-center">
+                <div class="card-views">24,474 lượt xem</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2023/10/02/ee68c4b15f959ae4_8060633cf3493cc7_25442169618180093.jpg"
+                alt="Sasaki to Miyano Movie: Sotsugyou-hen"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Sasaki to Miyano Movie: Sotsugyou-hen</h3>
+              <div class="card-decription flex flex-end align-items-center">
+                <div class="card-views">24,946 lượt xem</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--movie">
+        <a
+          class="section-link nunito nunito--400"
+          href="https://vuighe2.com/tap-moi-nhat"
+        >
+          <h1 class="section-title nunito nunito--400">HÔM NAY XEM GÌ</h1>
+        </a>
+
+        <div class="list-movie grid gap-12">
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2022/12/18/bc8cd6e5ac97125d_f7f0030a566e4a6d_6005816713507274118684.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Yami Shibai 10</h3>
+              <div class="card-decription flex flex-end align-items-center">
+                <div class="card-views">47,600 lượt xem</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2022/12/07/3324c155af1270da_c102144bfb3274f5_29548167034924483.jpg"
+                alt="Sunoharasou no Kanrinin-san"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Sunoharasou no Kanrinin-san</h3>
+              <div class="card-decription flex flex-end align-items-center">
+                <div class="card-views">352,665 lượt xem</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+              src="https://s199.imacdn.com/vg/2022/08/20/30fb8688953a0ea5_5da62fc8cde03db1_13405016609943337185710.jpg"
+              alt="One Piece Special TVs - 3D2Y"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">One Piece Special TVs - 3D2Y</h3>
+              <div class="card-decription flex flex-end align-items-center">
+                <div class="card-views">965,772 lượt xem</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2022/12/05/0973cc1da582b3b0_576f7867273617aa_37369167022163833.jpg"
+                alt="Kimitachi wa Dou Ikiru ka"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Amatsuki</h3>
+              <div class="card-decription flex flex-end align-items-center">
+                <div class="card-views">139,502 lượt xem</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2022/12/20/45092885993de932_bea9ef5d3feab385_14745516715159618118684.jpg"
+                alt="Inuyashiki"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Inuyashiki</h3>
+              <div class="card-decription flex flex-end align-items-center">
+                <div class="card-views">648,621 lượt xem</div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2022/12/05/b71fed148d7e150a_96ab15acb5d5999d_46309167024510243.jpg"
+                alt="Yu-Gi-Oh! Zexal"
+              />
+            </div>
+            <div class="card-info">
+              <h3 class="card-title clamp-text">Yu-Gi-Oh! Zexal</h3>
+              <div class="card-decription flex flex-end align-items-center">
+                <div class="card-views">922,217 lượt xem</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--movie">
+        <a
+          class="section-link nunito nunito--400"
+          href="https://vuighe2.com/tap-moi-nhat"
+        >
+          <h1 class="section-title nunito nunito--400">HÔM NAY XEM GÌ</h1>
+        </a>
+
+        <div class="list-anime grid gap-12">
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2024/02/16/6e67592756ae73a4_677cb0a2eb031c5a_25201170809191883.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2024/01/21/1fb882b3a1b1514c_9561392d7ca31d8e_13024217058557489118684.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2024/01/15/251d9a04f40bf7b6_9c9162a65e9a701e_15626817053073654185710.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2024/01/13/8d46134d0bbc60ee_f9cf3a524e1a2067_11347217050812376185710.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+              src="https://s199.imacdn.com/vg/2023/12/28/45f85904472250d3_bfd88fc35d611492_13749817037721941118684.jpg"
+              alt="The First Slam Dunk"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2023/12/26/99eb9f28b9301539_17190f4d0f62aab1_17371317035776233185710.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2024/01/08/a61172c335bfed51_bd6782379e233a5e_16663717046899939118684.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2024/01/27/3fdb73fedbef607e_64ecf536046d39f1_8743617063524776118684.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2023/12/23/612f8190c18f6bf9_25db19f4285fc1c6_10100217033238164185710.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2024/01/12/eae8150e6fe063bf_3fc2090fe7613d15_19040617050257983118684.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2023/12/23/c51142a7f4d664ba_0ef0b24531fdc082_20209017033230649185710.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-thumbnail h-314">
+              <img
+                src="https://s199.imacdn.com/vg/2024/01/08/dda1178c69eff475_07554b0462f078c9_16382617047073312118684.jpg"
+                alt="The First Slam Dunk"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.nunito--200{
+    font-weight: 200;
+}
+.nunito--300{
+    font-weight: 300;
+}
+.nunito--400{
+    font-weight: 400;
+}
+.nunito--500{
+    font-weight: 500;
+}
+.nunito--600{
+    font-weight: 600;
+}
+.nunito--700{
+    font-weight: 700;
+}
+.nunito--800{
+    font-weight: 800;
+}
+.nunito--900{
+    font-weight: 900;
+}
+.nunito--1000{
+    font-weight: 1000;
+}
+.font-size-35{
+    font-size: 35px;
+    line-height: 35px;
+}
+.flex{
+    display: flex;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-end{
+    justify-content: flex-end;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-end{
+    align-items: flex-end;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.grid{
+    display: grid;
+}
+body {
+    background-color: rgb(30, 41, 59);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-top: 60px;
+    line-height: 1.5;
+
+}
+/* Header */
+header{
+    background-color: rgb(30, 41, 59);
+    width: 1316px;
+    height: 60px;
+    gap: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.header-logo{
+    margin-right: 37px;
+    height: 100%;
+
+}
+.header-logo img{
+    object-fit: cover;
+    height: 50px;
+}
+.nav{
+    gap: 12px;
+    flex-grow: 5;
+}
+.nav-item{
+    height: 30px;
+    border: 1px solid rgb(55, 65, 81) ;
+    border-radius: 9999px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 3px;
+}
+.nav-link:hover{
+    color: aqua;
+}
+.nav-link{
+    color:rgb(156, 163, 175);
+    font-size: 14px;
+    line-height: 21px; 
+    text-decoration: rgb(255, 255, 255) none ;
+    height:100% ;
+}
+.header-info{
+    width: 320px;
+    gap:8px;
+}
+.header-info-button{
+    background-color: rgb(51, 65, 85);
+    padding: 10px;
+    border-radius: 9999px;
+}
+.header-info-icon{
+    height: 20px;
+    width: 20px;
+    color:  rgb(229, 231, 235);
+    border-radius: 50%;
+}
+.header-seach{
+    margin-left: auto;
+
+    width: auto;
+}
+.seach-box{
+    border-radius: 9999px;
+    background-color:rgb(30, 41, 59) ;
+    border: solid 1px rgb(55, 65, 81);
+    position: relative;
+}
+.seach-box input{
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color:rgb(30, 41, 59);
+    cursor: text;
+    font-size: 14px;
+    line-height: 30px;
+    width: 320px;
+    border-radius: 9999px;
+}
+.seach-icon{
+    color: rgb(51, 65, 85);
+    padding: 2px;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    left: 294px;
+}
+.seach-icon svg{
+    height: 24px;
+}
+/* Main */
+.main{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1316px;
+    gap:30px;
+}
+.section-cover{
+    height: 390px;
+}
+.section-cover img{
+    height: 100%;
+}
+.section-title{
+    color: rgb(185, 28, 28);
+    font-size: 25px;
+    line-height: 37.5px;
+    margin-bottom: 8px;
+}
+.section-link{
+    text-decoration: none;
+}
+/* Card */
+.list-card{
+    gap: 12px;
+}
+.w-320{
+    width: 320px;
+}
+.h-180{
+    height: 180px;
+}
+.h-314{
+    height: 314px;
+}
+.gap-12{
+    gap:12px
+}
+.card{
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+.card a{
+    text-decoration-color: rgb(255, 255, 255) ;
+    text-decoration-line: none;
+    text-transform: none;
+}
+.card-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    color: white;
+    height: 100px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.card-decription{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    gap:74px;
+    align-items: flex-end;
+}
+.card-title{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 2px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+}
+.clamp-text{
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    height: 18px;
+    display: -webkit-box;
+}
+.card-espisode{
+    font-weight: 200;
+    max-width: 50%;
+    font-size:12px;
+    line-height: 18px;
+}
+.card-views{
+    width: auto;
+    font-size: 12px;
+    line-height: 18px;
+    white-space: nowrap;
+    text-size-adjust: 100%;
+    font-weight: 200;
+}
+/* Bo suu tap */
+.list-album{
+    grid-template-columns: repeat(6, minmax(0,1fr));
+    grid-template-rows: repeat(2,minmax(0,1fr));
+    row-gap: 12px;
+    column-gap: 12px;
+}
+.card-album--nearest{
+    grid-column: span 2 / span 2;
+    grid-row: span 2/ span 2;
+}
+/* Rank */
+.card-album{
+    position: relative;
+}
+.card-cover{
+    height: 100%;
+    width: 100%;
+}
+.card-cover img{
+    object-fit: cover;
+    height: 100%;
+}
+.rank-info{
+    position: relative;
+}
+.card-rank {
+    font-size: 35px;
+    line-height: 35px;
+    position: absolute;
+    top:12px;
+    left: 12px;
+}
+.card-rank--top{
+    font-size: 60px;
+    line-height: 60px;
+}
+.from-amber-500 {
+    --tw-gradient-from: #f59e0b;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to)
+}
+.to-red-500 {
+    --tw-gradient-to: #ef4444;
+}
+.bg-gradient-to-b {
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.card-title--rank{
+    display: none;
+    position: absolute;
+    bottom: 4px;
+    left: 12px;
+}
+.card-album:hover .card-title--rank{
+    display: block;
+}
+.card-album:hover .card-rank{
+    position: absolute;
+    top:6px;
+    left: 12px;
+}
+.card-thumbnail{
+    height: 100%;
+    width: auto;
+}
+.list-movie{
+    grid-template-columns: repeat(6, minmax(0,1fr));
+    grid-template-rows: repeat(auto,minmax(0,1fr));
+    column-gap: 12px;
+}
+.list-anime{
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    grid-template-rows: repeat(auto,minmax(0,1fr));
+    column-gap: 12px;
+}
+footer {
+    height: 96px;
+}
