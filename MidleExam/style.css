@@ -104,6 +104,10 @@ body {
   right: 0;
   z-index: 1;
 }
+.home-page{
+  text-decoration: none;
+  color: rgb(26, 27, 31);
+}
 .icon{
   height: 35px;
 }
