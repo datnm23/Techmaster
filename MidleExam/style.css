@@ -173,6 +173,10 @@ body {
   width: auto;
   margin-bottom: 50px;
 }
+.section-thumbnail img{
+  object-fit: cover;
+  border-radius: 15px;
+}
 .section-title{
   color: rgb(26, 28, 32);
   font-size: 80px;
